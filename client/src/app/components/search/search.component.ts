@@ -4,6 +4,9 @@ import { ArtistData } from '../../data/artist-data';
 import { AlbumData } from '../../data/album-data';
 import { TrackData } from '../../data/track-data';
 import { ResourceData } from '../../data/resource-data';
+import { CarouselCardComponent } from '../carousel-card/carousel-card.component';
+import { CarouselComponent } from '../carousel/carousel.component';
+import { TrackListComponent } from '../track-list/track-list.component';
 
 @Component({
   selector: 'app-search',
@@ -22,8 +25,11 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
   }
 
-  search() {
+  async search() {
     //TODO: call search function in spotifyService and parse response
+    this.resources = await this.spotifyService.searchFor(this.searchCategory, this.searchString);
+    return;
+
   }
 
 }

@@ -1,23 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-	background-color: var(--bs-gray-dark);
+	background-color: #f3bac3;
 	color: var(--bs-light);
-	font-family: 'Lato', sans-serif;
+	font-family: 'Urbanist', sans-serif;
 }
+
 
 h1 {
 	font-weight: 900;
+	color: #333;
 }
 
 h2, h3 {
 	font-weight: 700;
+	color:#333;
 }
 
 button, .btn {
-	margin: 10px;
+	margin: 20px;
+	color: black;
+	background-color:white;
 }
 
 a {
-	color: var(--bs-orange);
+	color: #c47179;
 }
